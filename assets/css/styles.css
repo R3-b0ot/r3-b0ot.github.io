@@ -492,24 +492,229 @@ justify-self: center;
 }
 
 /* Services modal */
+.services__modal{
+  position: fixed;
+  inset: 0;
+  background-color: hsla(var(--second-hue), 28%, 16%, .7);
+  padding: 2rem 1rem;
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: .4s;
+  z-index: var(--z-modal);
+}
+
+.services__modal-content{
+  position: relative;
+  background-color: var(--body-color);
+  padding: 4.5rem 1.5rem 2.5rem;
+  border-radius: 1.5rem;
+}
+
+.services__modal-title,
+.services__modal-description{
+  text-align: center;
+}
+
+.services__modal-title{
+  font-size: var(--h3-font-size);
+  color: var(--first-color);
+  margin-bottom: 1rem;
+}
+
+.services__modal-description{
+  font-size: var(--small-font-size);
+  margin-bottom: 2rem;
+}
+
+.services__modal-list{
+  display: grid;
+  row-gap: .75rem;
+}
+
+.services__modal-item{
+  display: flex;
+  align-items: flex-start;
+  column-gap: .5rem;
+}
+
+.services__modal-icon{
+  font-size: 1.5rem;
+  color: var(--first-color);
+}
+
+.services__modal-info{
+  font-size: var(--small-font-size);
+}
+
+.services__modal-close{
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+font-size: 1.5rem;
+color: var(--first-color);
+cursor: pointer;
+}
 
 
 /*Active modal*/
-
+.active-modal{
+  opacity: 1;
+  visibility: visible;
+}
 
 /*=============== WORK ===============*/
+.work__container{
+  padding-top: 1rem;
+}
 
+.work__filters{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .75rem;
+  margin-bottom: 2rem;
+}
+
+.work__item{
+  cursor: pointer;
+  color: var(--title-color);
+  padding: .25rem .75rem;
+  font-weight: var(--font-medium);
+  border-radius: .5rem;
+}
+
+.work__card{
+  background-color: var(--container-color);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.work__img{
+  border-radius: 1rem;
+  margin-bottom: .75rem;
+}
+
+.work__title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: .25rem;
+}
+
+.work__button{
+  width: max-content;
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+}
+
+.work__button:hover .work__icon{
+  transform: translateX(.25rem);
+}
+
+.work__icon{
+  font-size: 1rem;
+  transition: .4s;
+}
 
 /* Active item work*/
-
+.active-work{
+  background-color: var(--first-color);
+  color: var(--body-color);
+}
 
 /*=============== TESTIMONIAL ===============*/
+.testimonial__card{
+  background-color: var(--container-color);
+  padding: 1.25rem 1.5rem;
+  border-radius: 1.5rem;
+  margin-bottom: 3rem;
+}
 
+.testimonial__img{
+  width: 60px;
+  border-radius: 3rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial__name{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: .25rem;
+}
+
+.testimonials__description{
+  font-size: var(--small-font-size);
+}
 
 /* Swiper class */
+.swiper-pagination-bullet{
+  background-color: var(--text-color-light);
+}
 
+.swiper-pagination-bullet-active{
+  background-color: var(--first-color);
+}
 
 /*=============== CONTACT ===============*/
+.contact__container{
+  row-gap: 3rem;
+  padding-bottom: 3rem;
+}
+
+.contact__title{
+  text-align: center;
+  font-size: var(--h3-font-size);
+  margin-bottom: 1.5rem;
+}
+
+.contact__info{
+  display: grid;
+  gap: 1rem;
+}
+
+.contact__card{
+  background-color: var(--container-color);
+  padding: 1rem;
+  border-radius: .75rem;
+  text-align: center;
+}
+
+.contact__card-icon{
+  font-size: 2rem;
+  color: var(--title-color);
+  margin-bottom: .25rem;
+}
+
+.contact__card-title,
+.contact__card-data{
+  font-size: var(--small-font-size);
+}
+
+.contact__card-title{
+  font-weight: var(--font-medium);
+}
+
+.contact__card-data{
+  display: block;
+  margin-bottom: .75rem;
+}
+
+.contact__button{
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .25rem;
+}
+
+.contact__button:hover .contact__button-icon{
+  transform: translateX(.25rem);
+}
 
 
 /*=============== FOOTER ===============*/

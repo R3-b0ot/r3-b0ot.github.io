@@ -12,10 +12,10 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
     <title> Abhishek Jain - R3_b0ot</title>
 </head>
@@ -452,17 +452,177 @@
 
         <!--=============== WORK ===============-->
         <section class="work section" id="work">
+            <span class="section__subtitle">My Portfolio</span>
+            <h2 class="section__title">Recent Works</h2>
 
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter="all">All</span>
+                <span class="work__item" data-filter=".web">Web</span>
+                <span class="work__item" data-filter=".movil">Movil</span>
+                <span class="work__item" data-filter=".design">Design</span>
+            </div>
+
+            <div class="work__container container grid">
+                <div class="work__card mix web">
+                    <img src="assets/img/work1.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title"> Web Design</h3>
+
+                    <a href="#" class="work__button">
+                        Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix movil">
+                    <img src="assets/img/work2.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">App Movil</h3>
+
+                    <a href="#" class="work__button">
+                        Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix design">
+                    <img src="assets/img/work3.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Brand Design</h3>
+
+                    <a href="#" class="work__button">
+                        Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="assets/img/work4.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Web design</h3>
+
+                    <a href="#" class="work__button">
+                        Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix movil">
+                    <img src="assets/img/work5.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">App Movil</h3>
+
+                    <a href="#" class="work__button">
+                        Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+            </div>
         </section>
 
         <!--=============== TESTIMONIALS ===============-->
         <section class="testimonial section">
+            <span class="section__subtitle">My Clients Says</span>
+            <h2 class="section__title">Testimonials</h2>
 
+            <div class="testimonial__container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial1.png" alt="" class="testimonial__img">
+
+                        <h3 class="testimonials__name">John Doe</h3>
+                        <p class="testimonials__description">
+                            A really good job, all aspects of the project were
+                            followed step by step and with good results.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial2.png" alt="" class="testimonial__img">
+
+                        <h3 class="testimonials__name">Paula Vusy</h3>
+                        <p class="testimonials__description">
+                            A really good job, all aspects of the project were
+                            followed step by step and with good results.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial3.png" alt="" class="testimonial__img">
+
+                        <h3 class="testimonials__name">Sara Cill</h3>
+                        <p class="testimonials__description">
+                            A really good job, all aspects of the project were
+                            followed step by step and with good results.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+            </div>
         </section>
 
         <!--=============== CONTACT ===============-->
         <section class="contact section" id="contact">
+            <span class="section__subtitle">Get in Touch</span>
+            <h2 class="section__title">Contact Me</h2>
 
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title">Talk To Me</h3>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='bx bx-mail-send contact_card-icon'></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">abhishek.aj64@gmail.com</span>
+                        
+                            <a href="mailto:abhishek.aj64@gmail.com" target="_blank" class="contact__button">
+                                Write Me <i class="bx bx-arroe-right-alt contact__button-icon"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-whatsapp contact_card-icon'></i>
+                            <h3 class="contact__card-title">WhatsApp</h3>
+                            <span class="contact__card-data">+91 75065 38141</span>
+                        
+                            <a href="https://api.whatsapp.com/send?phone=917506538141&text=Hello, more information!" target="_blank" class="contact__button">
+                                Write Me <i class="bx bx-arroe-right-alt contact__button-icon"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-messenger contact_card-icon'></i>
+                            <h3 class="contact__card-title">Messenger</h3>
+                            <span class="contact__card-data">user.fb123</span>
+                        
+                            <a href="https://m.me/r3b0ot" target="_blank" class="contact__button">
+                                Write Me <i class="bx bx-arroe-right-alt contact__button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title">Write me Your Project</h3>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Name</label>
+                            <input type="text" placeholder="Insert your Name" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Mail</label>
+                            <input type="email" placeholder="Insert your E-Mail" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Project</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Write Your Project" class="contact__form-input"></textarea>
+                        </div>
+
+                        <button class="button">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -475,10 +635,10 @@
     <script src=""></script>
 
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--=============== MIXITUP FILTER ===============-->
-    <script src=""></script>
+    <script src="assets/js/mixitup.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
